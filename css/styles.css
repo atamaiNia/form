@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+input {
+  padding: 8px;
+  font-family: inherit;
+  width: 200px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  color: blue;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-left: 10px;
+}
+
+.checkbox {
+  width: auto;
+}
+
+button {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 200px;
+  resize: none;
+  /* resize: both | horizontal | vertical | none - можливість змінювати розмір вікна */
+}
+
+fieldset {
+  width: 400px;
+}

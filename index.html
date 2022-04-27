@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Label -->
+    <form>
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+
+      <label>
+        Password
+        <input type="password" name="password" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Input + autofocus -->
+    <form>
+      <label>
+        Username
+        <input type="text" name="username" autofocus />
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Placeholder -->
+    <form>
+      <label>
+        Username
+        <input type="text" name="username" placeholder="Jacob Mercer" />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Email + password -->
+    <form>
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" minlength="5" maxlength="12" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Radio button -->
+    <form class="row">
+      <p>Choose a color:</p>
+      <label class="row">
+        <input class="checkbox" type="radio" name="color" value="red" checked />
+        Red
+      </label>
+      <label class="row">
+        <input class="checkbox" type="radio" name="color" value="white" />
+        White
+      </label>
+      <label class="row">
+        <input class="checkbox" type="radio" name="color" value="green" />
+        Green
+      </label>
+    </form>
+    <!-- Checkbox -->
+    <form class="row">
+      <p>What are your hobbies?</p>
+      <label class="row">
+        <input
+          class="checkbox"
+          type="checkbox"
+          name="hobby"
+          value="music"
+          checked
+        />
+        Music
+      </label>
+      <label class="row">
+        <input
+          class="checkbox"
+          type="checkbox"
+          name="hobby"
+          value="sports"
+          checked
+        />
+        Sports
+      </label>
+      <label class="row">
+        <input class="checkbox" type="checkbox" name="hobby" value="reading" />
+        Reading
+      </label>
+    </form>
+    <!-- Tel -->
+    <form>
+      <label>
+        Phone number
+        <input type="tel" name="phone_number" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Range повзунок -->
+    HTML CSS BabelResult Skip Results Iframe EDIT ON
+    <label>
+      Interest rate:
+      <input
+        type="range"
+        name="interest_rate"
+        value="40"
+        min="0"
+        max="100"
+        step="20"
+      />
+    </label>
+
+    <p>Selected value: <span class="js-selected-value">40</span></p>
+
+    <!-- Date and time -->
+    <form>
+      <label>
+        Date
+        <input type="date" min="1920-01-01" max="2020-01-01" />
+      </label>
+
+      <label>
+        Time
+        <input type="time" />
+      </label>
+
+      <label>
+        Date and time
+        <input
+          type="datetime-local"
+          min="1920-01-01T00:00"
+          max="2020-01-01T00:00"
+        />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Textarea -->
+    <form>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="example@mail.com" />
+      </label>
+      <label>
+        Feedback
+        <textarea
+          name="feedback"
+          rows="5"
+          placeholder="Type your message here..."
+        ></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Select -->
+    <label for="size">Size</label>
+    <select id="size" name="size">
+      <option value="xs">Extra Small</option>
+      <option value="s">Small</option>
+      <option value="m" selected>Medium</option>
+      <option value="l">Large</option>
+    </select>
+    <!-- Optgroup -->
+    <label for="month">Month</label>
+    <select name="month" id="month">
+      <optgroup label="Summer">
+        <option value="s6">June</option>
+        <option value="s7">July</option>
+        <option value="s8">August</option>
+      </optgroup>
+
+      <optgroup label="Autumn">
+        <option value="s9">September</option>
+        <option value="s10">October</option>
+        <option value="s11">November</option>
+      </optgroup>
+    </select>
+    <!-- Datalist -->
+    <label for="fav">Choose your favourite browser</label>
+    <input list="browsers" name="fav" id="fav" />
+
+    <datalist id="browsers">
+      <option>Edge</option>
+      <option>Firefox</option>
+      <option>Chrome</option>
+      <option>Opera</option>
+      <option>Safari</option>
+    </datalist>
+    <label for="state">Choose your state</label>
+    <input type="text" name="state" id="state" list="states" />
+    <datalist id="states">
+      <option value="AL">Alabama</option>
+      <option value="AK">Alaska</option>
+      <option value="AZ">Arizona</option>
+      <option value="AR">Arkansas</option>
+    </datalist>
+    <!-- Групування полів(fieldset і legend)-->
+    <form>
+      <fieldset>
+        <legend>Enter your contact details</legend>
+        <label>
+          Name
+          <input type="text" name="username" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your favourite programming language</legend>
+        <label class="row">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="language"
+            value="python"
+          />
+          Python
+        </label>
+        <label class="row">
+          <input class="checkbox" type="checkbox" name="language" value="js" />
+          JavaScript
+        </label>
+        <label class="row">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="language"
+            value="ruby"
+          />
+          Ruby
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>I want to receive</legend>
+        <label class="row">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="newsletter"
+            value="weekly"
+          />
+          The weekly newsletter
+        </label>
+        <label class="row">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="newsletter"
+            value="company_offers"
+          />
+          Offers from the company
+        </label>
+        <label class="row">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="newsletter"
+            value="associated_offers"
+          />
+          Offers from associated companies
+        </label>
+      </fieldset>
+
+      <button type="submit">Subscribe</button>
+    </form>
+    <script src="./range.js"></script>
+  </body>
+</html>
