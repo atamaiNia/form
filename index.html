@@ -278,6 +278,184 @@
 
       <button type="submit">Subscribe</button>
     </form>
+    <!-- Обовязкові поля -->
+    <form>
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" required />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Обмеження довжини -->
+    <form>
+      <label>
+        Username
+        <input type="text" name="username" required minlength="3" />
+      </label>
+      <label>
+        Password
+        <input
+          type="password"
+          name="password"
+          required
+          minlength="6"
+          maxlength="12"
+        />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Обмеження значення -->
+    <form>
+      <label>
+        How many pizzas do you want to order?
+        <input type="number" name="amount" required min="1" max="10" />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Регулярний вираз -->
+    <form>
+      <label>
+        Username
+        <input
+          type="text"
+          name="text"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+      </label>
+      <label>
+        Password
+        <input
+          type="password"
+          name="password"
+          required
+          minlength="6"
+          maxlength="12"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+        />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Checked -->
+    <form class="form">
+      <div role="group" class="form-group">
+        <b class="form-caption">What are your hobbies?</b>
+
+        <div class="form-field">
+          <input
+            type="checkbox"
+            class="form-input"
+            name="hobby"
+            value="sports"
+            id="sports"
+          />
+          <label class="form-label" for="sports">Sports</label>
+        </div>
+
+        <div class="form-field">
+          <input
+            type="checkbox"
+            class="form-input"
+            name="hobby"
+            value="music"
+            id="music"
+          />
+          <label class="form-label" for="music">Music</label>
+        </div>
+
+        <div class="form-field">
+          <input
+            type="checkbox"
+            class="form-input"
+            name="hobby"
+            value="books"
+            id="books"
+          />
+          <label class="form-label" for="books">Books</label>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+    <!-- In-range out-of-range -->
+    <form class="form">
+      <div class="form-field">
+        <label for="amount-1" class="form-label"
+          >How many pizzas do you want to order?</label
+        >
+        <input
+          type="number"
+          required
+          min="1"
+          max="10"
+          step="1"
+          value="0"
+          name="amount-1"
+          id="amount-1"
+          class="form-input"
+        />
+      </div>
+      <div class="form-field">
+        <label for="amount-2" class="form-label"
+          >How many pizzas do you want to order?</label
+        >
+        <input
+          type="number"
+          required
+          min="1"
+          max="10"
+          step="1"
+          value="3"
+          name="amount-2"
+          id="amount-2"
+          class="form-input"
+        />
+      </div>
+      <div class="form-field">
+        <label for="amount-3" class="form-label"
+          >How many pizzas do you want to order?</label
+        >
+        <input
+          type="number"
+          required
+          min="1"
+          max="10"
+          step="1"
+          name="amount-3"
+          id="amount-3"
+          class="form-input"
+        />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- :valid :invalid -->
+    <form class="form">
+      <label class="form-label">
+        <span class="label-text">Username</span>
+        <input
+          type="text"
+          class="form-input"
+          name="username"
+          required
+          minlength="3"
+        />
+      </label>
+
+      <label class="form-label">
+        <span class="label-text">Email</span>
+        <input type="email" class="form-input" name="mail" required />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
     <script src="./range.js"></script>
   </body>
 </html>
